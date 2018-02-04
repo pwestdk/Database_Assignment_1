@@ -11,12 +11,22 @@ public class Simple_db {
     public static int id;
 
     public static void main(String[] args) throws IOException {
+        
+        // Run this method to create the DB (.txt file database.txt), with hardcoded inputs
         db_create();
+        
+        // Creating hashmap
         creating_hash();
+        
+        // Write a name to the database
         //db_write("Mikkel");
         //db_write("Hamza");
+        
+        // Read entire the database
         db_read();
-        db_find("20");
+        
+        // Find specific ID in the database
+        db_find("4");
     }
 
     public static void db_create() throws IOException {
